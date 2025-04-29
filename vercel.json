@@ -1,0 +1,6 @@
+{
+  "installCommand": "npm rebuild sqlite3 --build-from-source && npm install",
+  "env": {
+    "NPM_CONFIG_BUILD_FROM_SOURCE": "true"
+  }
+}
