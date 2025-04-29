@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login / Register</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <div class="logo">GreenGourmet</div>
+      </a>
+      <input type="checkbox" id="nav_check" hidden />
+      <nav>
+        <ul id="nav-links"></ul>
+      </nav>
+      <label for="nav_check" class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+    </header>
+
+    <div class="container">
+      <div class="form-toggle">
+        <button id="show-login" class="active">Login</button>
+        <button id="show-register">Register</button>
+      </div>
+      <form id="login-form" class="form">
+        <h2>Login</h2>
+        <label for="login-email">Email:</label>
+        <input type="email" id="login-email" required />
+        <label for="login-password">Password:</label>
+        <input type="password" id="login-password" required />
+        <button type="submit">Login</button>
+      </form>
+
+      <form id="register-form" class="form hidden">
+        <h2>Register</h2>
+        <label for="register-name">Name:</label>
+        <input type="text" id="register-name" required />
+        <label for="register-email">Email:</label>
+        <input type="email" id="register-email" required />
+        <label for="register-password">Password:</label>
+        <input type="password" id="register-password" required />
+        <button type="submit">Register</button>
+      </form>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 EcoRecipes. All rights reserved.</p>
+    </footer>
+    <script src="js/home.js"></script>
+    <script src="js/login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+/* Form toggle buttons */
+.form-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.form-toggle button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.form-toggle button.active {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.form-toggle button:not(.active):hover {
+    background-color: #e0e0e0;
+}
+
+/* Hidden form */
+.hidden {
+    display: none;
+}
+
+/* Form container */
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

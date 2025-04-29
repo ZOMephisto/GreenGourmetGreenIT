@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ajouter une Recette</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <div class="logo">GreenGourmet</div>
+      </a>
+      <input type="checkbox" id="nav_check" hidden />
+      <nav>
+        <ul id="nav-links"></ul>
+      </nav>
+      <label for="nav_check" class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+    </header>
+    <h1>Add New Recipe</h1>
+    <form id="recipe-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required /><br />
+
+      <label for="alcoholic">Alcoholic:</label>
+      <select id="alcoholic" name="alcoholic">
+        <option value="Alcoholic">Alcoholic</option>
+        <option value="Non_Alcoholic">Non-Alcoholic</option></select
+      ><br />
+
+      <label for="category">Category:</label>
+      <input type="text" id="category" name="category" /><br />
+
+      <label for="instructions">Instructions:</label>
+      <textarea id="instructions" name="instructions" required></textarea><br />
+
+      <label for="drinkThumbnail">Drink Thumbnail URL:</label>
+      <input type="url" id="drinkThumbnail" name="drinkThumbnail" /><br />
+
+      <label for="ingredients">Ingredients (comma-separated):</label>
+      <input type="text" id="ingredients" name="ingredients" required /><br />
+
+      <button type="submit">Add Recipe</button>
+    </form>
+
+    <p id="status"></p>
+    <footer>
+      <p>&copy; 2024 EcoRecipes. All rights reserved.</p>
+    </footer>
+
+    <script src="js/admin.js"></script>
+    <script src="js/home.js"></script>
+  </body>
+</html>

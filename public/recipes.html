@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Recettes</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <div class="logo">GreenGourmet</div>
+      </a>
+      <input type="checkbox" id="nav_check" hidden />
+      <nav>
+        <ul id="nav-links"></ul>
+      </nav>
+      <label for="nav_check" class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+    </header>
+
+    <div id="search-container">
+      <input
+        type="text"
+        id="search-bar"
+        placeholder="Search by name or ingredient..."
+      />
+    </div>
+
+    <h1>Cocktails List</h1>
+    <div class="recipe-grid" id="recipe-list"></div>
+
+    <div id="recipe-modal" class="modal">
+      <div class="modal-content">
+        <span id="close-modal" class="close">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p><strong>Alcoholic:</strong> <span id="modal-alcoholic"></span></p>
+        <p><strong>Category:</strong> <span id="modal-category"></span></p>
+        <p>
+          <strong>Instructions:</strong> <span id="modal-instructions"></span>
+        </p>
+        <p>
+          <strong>Ingredients:</strong> <span id="modal-ingredients"></span>
+        </p>
+        <img
+          id="modal-thumbnail"
+          style="max-width: 100%; display: none"
+          alt="Recipe Thumbnail"
+        />
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2024 EcoRecipes. All rights reserved.</p>
+    </footer>
+    <script src="js/recipes.js"></script>
+    <script src="js/home.js"></script>
+  </body>
+</html>

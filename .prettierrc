@@ -1,0 +1,5 @@
+{
+  "htmlWhitespaceSensitivity": "css",
+  "jsxSingleQuote": false,
+  "endOfLine": "auto"
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/admin.css" />
+    <title>Admin</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <div class="logo">GreenGourmet</div>
+      </a>
+      <input type="checkbox" id="nav_check" hidden />
+      <nav>
+        <ul id="nav-links"></ul>
+      </nav>
+      <label for="nav_check" class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+    </header>
+
+    <div id="recipe-list"></div>
+
+    <div id="edit-modal" class="modal">
+      <div class="modal-content">
+        <span id="close-edit-modal" class="close">&times;</span>
+        <h2>Edit Recipe</h2>
+        <form id="edit-form">
+          <input type="hidden" id="edit-id" />
+          <label for="edit-name">Name:</label>
+          <input type="text" id="edit-name" required />
+          <label for="edit-alcoholic">Alcoholic:</label>
+          <input type="text" id="edit-alcoholic" />
+          <label for="edit-category">Category:</label>
+          <input type="text" id="edit-category" />
+          <label for="edit-instructions">Instructions:</label>
+          <textarea id="edit-instructions" required></textarea>
+          <label for="edit-ingredients">Ingredients (comma-separated):</label>
+          <input type="text" id="edit-ingredients" required />
+          <label for="edit-drinkThumbnail">Drink Thumbnail URL:</label>
+          <input type="url" id="edit-drinkThumbnail" />
+          <button type="submit">Save Changes</button>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2024 EcoRecipes. All rights reserved.</p>
+    </footer>
+    <script src="js/admin.js"></script>
+    <script src="js/home.js"></script>
+  </body>
+</html>
